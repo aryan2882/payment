@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      ".env",
+      "app.js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.13.1",
+    "firebase-admin": "^12.4.0",
+    "nodemon": "^3.1.4",
+    "pdfkit": "^0.15.0",
+    "qrcode": "^1.5.4",
+    "razorpay": "^2.9.4"
+  }
+}
