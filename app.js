@@ -138,7 +138,7 @@ app.post('/payments/webhook', async (req, res) => {
   if (generatedSignature === signature) {
     try {
       // Make a POST request to your friend's API
-      const response = await axios.post('http://43.204.23.157:3500/AMOUNT', {
+      const response = await axios.post('https://spotfinder-llob.onrender.com/AMOUNT', {
         phone: phoneNumber,
         
       });
