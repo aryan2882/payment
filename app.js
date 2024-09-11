@@ -133,7 +133,8 @@ app.post('/payments/webhook', async (req, res) => {
   const generatedSignature = crypto.createHmac('sha256', process.env.RAZORPAY_KEY_SECRET)
     .update(`${orderId}|${paymentId}`)
     .digest('hex');
-
+    console.log(generatedSignature);
+    console.log(signature);
   if (generatedSignature === signature) {
     try {
       // Make a POST request to your friend's API
