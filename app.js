@@ -139,7 +139,7 @@ app.post('/payments/webhook', async (req, res) => {
     try {
       // Make a POST request to your friend's API
       const response = await axios.post('https://spotfinder-llob.onrender.com/AMOUNT', {
-        phone: phoneNumber,
+        phone: String(phoneNumber),
         
       });
 
